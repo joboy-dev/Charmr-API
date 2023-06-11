@@ -1,0 +1,4 @@
+.env
+charmr_venv
+media
+__pycache__
