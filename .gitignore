@@ -2,3 +2,4 @@
 charmr_venv
 media
 __pycache__
+db.sqlite3
