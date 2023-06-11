@@ -21,7 +21,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     profile_pic = models.ImageField(default='profile_pics/default.png', upload_to='profile_pics', null=True)
     gender = models.CharField(choices=gender_choice, max_length=1, default=MALE, null=False)
     date_of_birth = models.DateField(null=False)
-    age = models.IntegerField(max_length=3)
+    age = models.IntegerField(default=0)
     height = models.DecimalField(null=False, decimal_places=2, max_digits=3)
     date_joined = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)

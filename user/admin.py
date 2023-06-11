@@ -30,7 +30,7 @@ class UserAdmin(UserAdmin):
     list_display = ('username', 'email', 'id', 'first_name', 'last_name', 'is_staff', 'date_joined')
     list_filter = ('is_staff', 'is_superuser', 'is_active', 'groups')
     search_fields = ('username','email', 'first_name', 'last_name')
-    ordering = ('id')
+    ordering = ('id',)
     filter_horizontal = ('groups', 'user_permissions',)
 
 
